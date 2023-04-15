@@ -15,8 +15,8 @@ save를 호출했을 때 건네준 데이터가 그대로 반환될거고, Servi
 
 ```kotlin
 // kotest와 mockk를 사용했을 때 예제
-feature("이슈를 생성한다") {
-    scenario("사용자가 이슈 정보를 입력하면 해당 정보를 기반으로 이슈를 생성한다") {
+feature("이름고 설명을 생성한다") {
+    scenario("사용자가 정보를 입력하면 해당 정보를 기반으로 데이터를 생성한다") {
       // given
       val params = NameDescription(
         name = "name",
