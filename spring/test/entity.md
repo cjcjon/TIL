@@ -41,6 +41,6 @@ Entity의 id로 비교하는 속성때문에 service 레이어에서는 entity�
 Entity를 비교할 때 id가 null이면 사용할 속성을 Annotation으로 특정해서 (@Comparable 같은 커스텀) reflection으로 전체 가져와서 비교 검증을 진행하던가,<br/>
 아니면 위에 방식으로 진행해야 한다.
 
-Annotation으로 특정하는 방법도 매 번 해당 annotation을 적어줘야하고, 실수로 비교할 필드에 추가하지 않으면 equals비교가 실패해야하는데 성공하게 되므로 사람에게 맡겨야 한다.<br/>
+Annotation으로 특정하는 방법도 매 번 해당 annotation을 적어줘야하고, 실수로 비교할 필드에 추가하지 않으면 equals비교가 실패해야하는데 성공하게 되므로 믿음의 영역이 된다.<br/>
 JPA를 쓸 경우 시간을 소요하는 대신 적절한 테스트 검증을 위해서 Repository를 사용하는 Service는 SpringBootTest를 사용하던가<br/>
 위의 방식대로 테스트를 진행해야 할 것 같다.
